@@ -1,0 +1,50 @@
+.bar {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  z-index: 99;
+  padding: 30px;
+  border-top: 3px solid var(--yellow);
+  font-size: 11px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  border-top: 3px solid var(--orange);
+}
+
+.bar-links span {
+  cursor: pointer;
+}
+
+.bar-links span:first-of-type {
+  padding-right: 15px;
+}
+
+.bar-link__active {
+  color: var(--orange);
+  text-shadow: 0px 0px 8px rgba(255, 79, 2, 1);
+}
+
+.location {
+  color: var(--orange);
+}
+
+@media screen and (max-width:400px) {
+  .bar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bar-links {
+    padding-top: 10px;
+  }
+}
