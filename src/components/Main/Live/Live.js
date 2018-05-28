@@ -15,7 +15,7 @@ export default class Live extends Component {
           id="UstreamPlayer"
           width="100%" 
           height="100%" 
-          src={`http://www.ustream.tv/embed/${this.getRandomFeed()}?html5ui=1&controls=false&showtitle=false&autoplay=true`}
+          src={`https://www.ustream.tv/embed/${this.getRandomFeed()}?html5ui=1&controls=false&showtitle=false&autoplay=true`}
           allowFullScreen
           frameBorder="0" >
         </iframe>
